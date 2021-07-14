@@ -218,13 +218,12 @@ ensure_openblas() {
         return
     fi
 
-    wget -q https://github.com/xianyi/OpenBLAS/archive/v0.3.6.tar.gz
-    tar xf v0.3.6.tar.gz
-    cd OpenBLAS-0.3.6
-    make
+    git clone https://github.com/xianyi/OpenBLAS
+    cd OpenBLAS
+    git checkout fab746240cc7e95569fde23af8942f8bc97d6d40
+    make 
     make PREFIX=$PROJECT_DIR install
     cd ..
-    rm v0.3.6.tar.gz
 }
 
 ensure_suitesparse() {
