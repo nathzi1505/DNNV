@@ -17,5 +17,5 @@ cd Neurify
 git checkout 45acc32b64cc8cbaecfd6ee51b3cf5093421f2d6
 git pull
 cd generic
-make OPENBLAS_HOME=$PROJECT_DIR
+make CC=gcc-9 OPENBLAS_HOME=$PROJECT_DIR
 cp src/neurify ../../
