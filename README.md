@@ -12,7 +12,6 @@ Clone this repository:
 
 ```bash
 $ git clone https://github.com/dlshriver/DNNV.git
-$ git checkout v0.4.8
 ```
 
 Create a python virtual environment for this project:
